@@ -1,0 +1,25 @@
+student_id,name,grade,subject,retake_group
+1,Aiden Park,G9,Algebra 1,control
+2,Brianna Kim,G9,Algebra 1,control
+3,Connor Lee,G9,Algebra 1,treatment
+4,Diana Choi,G9,Algebra 1,treatment
+5,Ethan Jung,G10,Algebra 2,control
+6,Fiona Yoon,G10,Algebra 2,control
+7,George Han,G10,Algebra 2,treatment
+8,Hannah Seo,G10,Algebra 2,treatment
+9,Ivan Kwon,G10,Precalculus,control
+10,Julia Shin,G10,Precalculus,control
+11,Kevin Oh,G10,Precalculus,treatment
+12,Laura Lim,G10,Precalculus,treatment
+13,Mason Bae,G11,AP Precalculus,control
+14,Nora Cho,G11,AP Precalculus,control
+15,Oscar Jang,G11,AP Precalculus,treatment
+16,Priya Min,G11,AP Precalculus,treatment
+17,Quinn Song,G11,AP Calculus AB,control
+18,Rachel Moon,G11,AP Calculus AB,control
+19,Samuel Hong,G11,AP Calculus AB,treatment
+20,Tina Ahn,G11,AP Calculus AB,treatment
+21,Uma Kang,G12,AP Calculus BC,control
+22,Victor Yoo,G12,AP Calculus BC,control
+23,Wendy Im,G12,AP Calculus BC,treatment
+24,Xavier Nam,G12,AP Calculus BC,treatment

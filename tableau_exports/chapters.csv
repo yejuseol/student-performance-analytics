@@ -1,0 +1,44 @@
+chapter_id,subject,chapter_num,chapter_name,difficulty
+1,Algebra 1,1,Linear Equations & Inequalities,0.85
+2,Algebra 1,2,Functions & Graphs,0.95
+3,Algebra 1,3,Systems of Equations,1.05
+4,Algebra 1,4,Polynomials,1.0
+5,Algebra 1,5,Factoring,1.1
+6,Algebra 1,6,Quadratic Equations,1.2
+7,Algebra 1,7,Exponential Functions,1.15
+8,Algebra 1,8,Statistics & Data Analysis,0.9
+9,Algebra 2,1,Polynomial Functions,0.95
+10,Algebra 2,2,Rational Functions,1.1
+11,Algebra 2,3,Exponential & Logarithmic,1.15
+12,Algebra 2,4,Sequences & Series,1.05
+13,Algebra 2,5,Trigonometry Basics,1.2
+14,Algebra 2,6,Conic Sections,1.1
+15,Algebra 2,7,Probability & Statistics,0.9
+16,Algebra 2,8,Complex Numbers,1.15
+17,Precalculus,1,Review of Functions,0.9
+18,Precalculus,2,Polynomial & Rational Functions,1.05
+19,Precalculus,3,Exponential Functions,1.0
+20,Precalculus,4,Trigonometric Functions,1.2
+21,Precalculus,5,Trigonometric Identities,1.35
+22,Precalculus,6,Vectors & Parametric Equations,1.25
+23,Precalculus,7,Limits Introduction,1.3
+24,AP Precalculus,1,Polynomial & Rational Functions,1.0
+25,AP Precalculus,2,Exponential & Logarithmic,1.05
+26,AP Precalculus,3,Trigonometric Functions,1.2
+27,AP Precalculus,4,Functions Involving Parameters,1.3
+28,AP Precalculus,5,Polar Coordinates,1.35
+29,AP Calculus AB,1,Limits & Continuity,1.0
+30,AP Calculus AB,2,Differentiation: Definition,1.1
+31,AP Calculus AB,3,Differentiation: Composite,1.2
+32,AP Calculus AB,4,Contextual Applications,1.15
+33,AP Calculus AB,5,Analytical Applications,1.3
+34,AP Calculus AB,6,Integration & Accumulation,1.35
+35,AP Calculus AB,7,Differential Equations,1.4
+36,AP Calculus AB,8,Applications of Integration,1.35
+37,AP Calculus BC,1,Limits & Continuity,0.95
+38,AP Calculus BC,2,Differentiation,1.05
+39,AP Calculus BC,3,Integration Techniques,1.2
+40,AP Calculus BC,4,Parametric & Polar Functions,1.35
+41,AP Calculus BC,5,Infinite Sequences & Series,1.5
+42,AP Calculus BC,6,Vector-Valued Functions,1.4
+43,AP Calculus BC,7,Differential Equations,1.45
