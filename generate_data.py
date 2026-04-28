@@ -1,24 +1,3 @@
-"""
-generate_data.py
-Creates a SQLite database (math_tracker.db) with realistic synthetic student
-performance data based on the Math Tracker web app schema.
-
-Privacy note
-------------
-All student identifiers use the format Student_01 ... Student_24.
-No real names are stored. The data patterns (score ranges, improvement
-rates, chapter difficulty) are calibrated from real tutoring experience
-spanning 4 years (2022-2026) across 6 math courses.
-
-Design
-------
-- 24 students, 4 per course, balanced control/treatment within each course
-- Control group  (2 per course): no retake — first attempt is final score
-- Treatment group (2 per course): retake offered when first attempt < 80%
-- Each student has an ability tier (high/mid/low) for realistic spread
-- Retake improvement: mean +9 pts, std 4 (real re-study effort variance)
-"""
-
 import sqlite3
 import random
 import numpy as np
@@ -138,8 +117,7 @@ COURSES = {
     },
 }
 
-# Within each course: control=high+mid, treatment=mid+low
-# (lower performers are more likely to benefit from / use retakes)
+# 4 students per course: control=high+mid, treatment=mid+low
 ABILITY_PATTERN = [
     ("control",   "high"),
     ("control",   "mid"),
@@ -165,11 +143,14 @@ COURSE_OFFSETS_DAYS = {
 }
 START_DATE = date(2024, 10, 1)
 
+
 def tdate(ch_num, course, attempt=1):
     base = START_DATE + timedelta(days=COURSE_OFFSETS_DAYS[course])
-    d = base + timedelta(days=(ch_num-1)*22 + (8 if attempt==2 else 0)
-                              + random.randint(-4,4))
+    d = base + timedelta(days=(ch_num - 1) * 22
+                              + (8 if attempt == 2 else 0)
+                              + random.randint(-4, 4))
     return d.isoformat()
+
 
 def gen_score(base_avg, base_std, diff, tier, retake=False, first_pct=None):
     offset = TIER_OFFSET[tier]
@@ -177,24 +158,26 @@ def gen_score(base_avg, base_std, diff, tier, retake=False, first_pct=None):
     if retake:
         pct = min(100.0, first_pct + max(0, np.random.normal(9, 4)))
     else:
-        pct = np.random.normal(base_avg + offset - (diff-1.0)*18, std)
+        pct = np.random.normal(base_avg + offset - (diff - 1.0) * 18, std)
     pct = float(np.clip(pct, TIER_FLOOR[tier], 100.0))
     mm, fm = 30.0, 20.0
-    mcq = round(np.clip(pct + np.random.normal(1.5,2.0), 0,100)/100*mm, 1)
-    frq = round(np.clip(pct - np.random.normal(1.5,2.5), 0,100)/100*fm, 1)
-    tot = round(mcq+frq, 1)
-    return mcq, mm, frq, fm, tot, mm+fm, round(tot/(mm+fm)*100, 1)
+    mcq = round(np.clip(pct + np.random.normal(1.5, 2.0), 0, 100) / 100 * mm, 1)
+    frq = round(np.clip(pct - np.random.normal(1.5, 2.5), 0, 100) / 100 * fm, 1)
+    tot = round(mcq + frq, 1)
+    return mcq, mm, frq, fm, tot, mm + fm, round(tot / (mm + fm) * 100, 1)
+
 
 def note(pct, retake=False):
     if retake:
-        if pct>=80: return "Retake — strong improvement"
-        if pct>=76: return "Retake — passed mastery threshold"
+        if pct >= 80: return "Retake — strong improvement"
+        if pct >= 76: return "Retake — passed mastery threshold"
         return "Retake — further review recommended"
-    if pct>=90: return "Excellent work"
-    if pct>=80: return "Good understanding"
-    if pct>=76: return "Meets mastery threshold"
-    if pct>=65: return "Review key concepts before next chapter"
+    if pct >= 90: return "Excellent work"
+    if pct >= 80: return "Good understanding"
+    if pct >= 76: return "Meets mastery threshold"
+    if pct >= 65: return "Review key concepts before next chapter"
     return "Needs additional practice — retake recommended"
+
 
 def build_database(db_path="math_tracker.db"):
     conn = sqlite3.connect(db_path)
@@ -219,42 +202,29 @@ def build_database(db_path="math_tracker.db"):
         info = COURSES[s["subject"]]
         for chi, (_, diff) in enumerate(info["chapters"], 1):
             cid2 = ch_map[(s["subject"], chi)]
-            mc,mm,fr,fm,tot,tmax,pct = gen_score(
+            mc, mm, fr, fm, tot, tmax, pct = gen_score(
                 info["base_avg"], info["base_std"], diff, s["tier"])
-            cur.execute("INSERT INTO test_records VALUES "
-                        "(NULL,?,?,?,?,?,?,?,?,?,?,?,?)",
-                        (sid,cid2,1,tdate(chi,s["subject"],1),
-                         mc,mm,fr,fm,tot,tmax,pct,note(pct)))
-            if s["group"]=="treatment" and pct<80:
-                mc2,mm2,fr2,fm2,tot2,tmax2,pct2 = gen_score(
-                    info["base_avg"],info["base_std"],diff,s["tier"],
-                    retake=True,first_pct=pct)
-                cur.execute("INSERT INTO test_records VALUES "
-                            "(NULL,?,?,?,?,?,?,?,?,?,?,?,?)",
-                            (sid,cid2,2,tdate(chi,s["subject"],2),
-                             mc2,mm2,fr2,fm2,tot2,tmax2,pct2,
-                             note(pct2,retake=True)))
+            cur.execute(
+                "INSERT INTO test_records VALUES (NULL,?,?,?,?,?,?,?,?,?,?,?,?)",
+                (sid, cid2, 1, tdate(chi, s["subject"], 1),
+                 mc, mm, fr, fm, tot, tmax, pct, note(pct)))
+            if s["group"] == "treatment" and pct < 80:
+                mc2, mm2, fr2, fm2, tot2, tmax2, pct2 = gen_score(
+                    info["base_avg"], info["base_std"], diff, s["tier"],
+                    retake=True, first_pct=pct)
+                cur.execute(
+                    "INSERT INTO test_records VALUES (NULL,?,?,?,?,?,?,?,?,?,?,?,?)",
+                    (sid, cid2, 2, tdate(chi, s["subject"], 2),
+                     mc2, mm2, fr2, fm2, tot2, tmax2, pct2, note(pct2, retake=True)))
 
     conn.commit()
     n_s  = cur.execute("SELECT COUNT(*) FROM students").fetchone()[0]
     n_ch = cur.execute("SELECT COUNT(*) FROM chapters").fetchone()[0]
     n_r  = cur.execute("SELECT COUNT(*) FROM test_records").fetchone()[0]
     ret  = cur.execute("SELECT COUNT(*) FROM test_records WHERE attempt=2").fetchone()[0]
-    print(f"DB built: {n_s} students | {n_ch} chapters | {n_r} records ({ret} retakes)")
-
-    rows = cur.execute("""
-        SELECT s.retake_group,
-               ROUND(AVG(CASE WHEN r.attempt=1 THEN r.pct END),1) AS first_avg,
-               ROUND(AVG(r.pct),1) AS all_avg,
-               ROUND(100.0*SUM(CASE WHEN r.pct>=76 THEN 1 ELSE 0 END)/COUNT(*),1) AS mastery
-        FROM test_records r JOIN students s ON r.student_id=s.student_id
-        GROUP BY s.retake_group
-    """).fetchall()
-    print("\nGroup summary:")
-    print(f"  {'Group':12s} {'First-attempt avg':18s} {'All-attempt avg':16s} {'Mastery rate':12s}")
-    for g,fa,aa,m in rows:
-        print(f"  {g:12s} {fa:18}%   {aa:16}%   {m}%")
+    print(f"{n_s} students | {n_ch} chapters | {n_r} records ({ret} retakes)")
     conn.close()
+
 
 if __name__ == "__main__":
     build_database()
