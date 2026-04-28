@@ -151,7 +151,7 @@ JOIN test_records r2
 
 ## Tableau Dashboard
 
-🔗 **[View Interactive Dashboard on Tableau Public](#)** ← *link to be added after publishing*
+🔗 **[View Interactive Dashboard on Tableau Public](https://public.tableau.com/views/StudentPerformanceAnalytics_17773443084170/Dashboard1)**
 
 Dashboard includes:
 - KPI summary cards (avg score, mastery rate, retake count)
