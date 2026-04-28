@@ -1,25 +1,44 @@
 # Student Performance Analytics: Does a Retake Policy Improve Math Outcomes?
 
-An end-to-end data analysis project using **SQL**, **Python (A/B Testing, Statistical Modeling)**, and **Tableau** to evaluate whether offering students a retake opportunity leads to statistically significant improvements in chapter test scores.
+An end-to-end data analysis project using **SQL (SQLite)**, **Python (A/B testing, statistical modeling)**, and **Tableau** to evaluate whether offering chapter test retakes leads to statistically significant improvement in student math scores.
 
-> **Context:** Data is based on real tutoring patterns from [Math Tracker](https://github.com/yejuseol/math-tracker) — a student progress dashboard built for a private math tutoring practice — supplemented with realistic synthetic data to enable robust statistical analysis.
+> **Context:** Data patterns are calibrated from 4 years of private math tutoring (2022–2026) across 6 courses. All student identifiers use anonymous labels (`Student_01` … `Student_24`). No real names or personal data are included.
 
 ---
 
 ## Key Findings
 
-| Metric | Control (No Retake) | Treatment (Retake) |
+### Primary A/B Test — chapters where first attempt < 80%
+
+| Metric | Control (no retake) | Treatment (retake) |
 |---|---|---|
-| Mean Chapter Score | 71.9% | 77.9% |
-| Mastery Rate (≥76%) | 41.9% | 57.0% |
-| Sample Size | 86 chapter-scores | 86 chapter-scores |
+| n (chapter-records) | 55 | 69 |
+| Mean final score | 66.4% | 70.5% |
+| Median final score | 68.0% | 72.8% |
 
-- **t-test**: p = 0.0011 — statistically significant (α = 0.05)
-- **Mann-Whitney U**: p = 0.0016 — confirmed by non-parametric test
-- **Cohen's d**: 0.47 — small-to-medium practical effect
-- **95% CI on mean difference**: [2.23, 9.85] percentage points
+| Test | Statistic | p-value | Decision |
+|---|---|---|---|
+| Two-sample t-test | t = −1.86 | **0.0326** | Reject H₀ ✓ |
+| Mann-Whitney U | U = 1420.5 | **0.0083** | Reject H₀ ✓ |
+| Cohen's d | 0.343 | — | Small effect |
+| 95% CI on diff | [−0.1, 8.2] pp | — | — |
 
-Retake access is associated with a **+6.0 pp improvement** in final chapter scores and a **+15.1 pp increase in mastery rate**.
+### Paired analysis — treatment group only
+
+| Metric | Value |
+|---|---|
+| Retake attempts | 69 |
+| Mean first attempt | 61.0% |
+| Mean retake score | 70.5% |
+| Mean improvement | **+9.5 pp** |
+| Paired t-test | p ≈ 0.000 |
+
+### Full dataset mastery rate (score ≥ 76%)
+
+| Group | Mastery rate |
+|---|---|
+| Control | 44.2% |
+| Treatment | **51.2%** |
 
 ---
 
@@ -27,59 +46,54 @@ Retake access is associated with a **+6.0 pp improvement** in final chapter scor
 
 ```
 student-performance-analytics/
-├── generate_data.py       # Synthetic data generation (SQLite)
-├── sql_analysis.py        # SQL queries + CSV export for Tableau
-├── ab_testing.py          # Hypothesis testing & visualizations
+├── generate_data.py          # Synthetic data generation (SQLite)
+├── sql_analysis.py           # 7 analytical SQL queries + CSV export
+├── ab_testing.py             # Hypothesis testing & visualizations
 ├── requirements.txt
-├── math_tracker.db        # Generated SQLite database
-├── figures/               # Output charts
-│   ├── fig1_ab_distribution.png
-│   ├── fig2_score_trend.png
-│   ├── fig3_heatmap.png
-│   └── fig4_retake_detail.png
-└── tableau_exports/       # CSVs for Tableau dashboard
+├── math_tracker.db           # Generated SQLite database (241 records)
+├── figures/
+│   ├── fig1_ab_distribution.png   # Score distribution + boxplot
+│   ├── fig2_score_trend.png       # Monthly trend by group
+│   ├── fig3_heatmap.png           # Chapter difficulty heatmap
+│   ├── fig4_retake_detail.png     # Retake improvement analysis
+│   └── fig5_mastery_rate.png      # Mastery rate by group
+└── tableau_exports/
     ├── students.csv
     ├── chapters.csv
-    ├── test_records.csv
-    └── ab_best_scores.csv
+    ├── test_records.csv      # 241 rows — full record detail
+    └── ab_best_scores.csv    # 172 rows — one row per student-chapter
 ```
 
 ---
 
 ## A/B Test Design
 
-### Setup
+### Study setup
 
-The retake policy was introduced as a **natural experiment** within a private tutoring practice:
+The retake policy was implemented as a **natural experiment** within a private tutoring practice. Students in each course were assigned to either group:
 
-- **Control group** (12 students): Received instruction only. First attempt score = final score.
-- **Treatment group** (12 students): Offered a retake if first attempt score was below 80%. Final score = highest attempt.
+- **Control** (12 students): Instruction only. First attempt = final score. No retake offered.
+- **Treatment** (12 students): Retake offered when first attempt score was below 80%.
 
-Groups are **balanced across all 6 subjects** (2 control + 2 treatment per course) to eliminate course difficulty as a confounding variable.
+**Balance:** Groups are balanced 2:2 within each of the 6 courses to prevent course difficulty from confounding results.
 
-### Research Question
+**Research question:**  
+> Among chapters where a student scored below 80% on the first attempt, do students *with* retake access (treatment) achieve significantly higher final scores than those *without* (control)?
 
-> Among students taking the same subject, does offering retake opportunities lead to statistically higher final chapter scores?
+This framing isolates the retake effect: both groups include students who struggled on a chapter; the only difference is the availability of a second attempt.
 
 ### Hypotheses
 
-- **H₀:** μ_control ≥ μ_treatment (retakes have no effect or decrease scores)
+- **H₀:** μ_control ≥ μ_treatment (retakes have no effect)
 - **H₁:** μ_control < μ_treatment (retakes improve final scores)
 
-### Statistical Tests
-
-| Test | Statistic | p-value | Decision |
-|---|---|---|---|
-| Two-sample t-test | t = −3.10 | 0.0011 | Reject H₀ |
-| Mann-Whitney U | U = 2736.5 | 0.0016 | Reject H₀ |
-
-Both parametric and non-parametric tests confirm the finding. The Shapiro-Wilk test indicated slight non-normality in both groups (p < 0.05), making the Mann-Whitney result particularly important as a robust confirmation.
+Both t-test (p = 0.033) and Mann-Whitney U (p = 0.008) reject H₀.
 
 ---
 
 ## SQL Analysis Highlights
 
-All analytical queries run against a local SQLite database. Key queries:
+All analysis runs against a local SQLite database.
 
 **Chapter-level average performance:**
 ```sql
@@ -92,11 +106,11 @@ GROUP BY c.chapter_id
 ORDER BY avg_pct ASC;
 ```
 
-**Control vs Treatment — best score per student-chapter:**
+**Group summary — best score per student-chapter:**
 ```sql
 SELECT s.retake_group,
        COUNT(DISTINCT s.student_id) AS students,
-       ROUND(AVG(r.pct), 1)         AS avg_all_pct,
+       ROUND(AVG(r.pct), 1) AS avg_all_pct,
        ROUND(100.0 * SUM(CASE WHEN r.pct >= 76 THEN 1 ELSE 0 END)
              / COUNT(r.record_id), 1) AS mastery_rate_pct
 FROM students s
@@ -104,14 +118,13 @@ JOIN test_records r ON s.student_id = r.student_id
 GROUP BY s.retake_group;
 ```
 
-**Retake improvement — first attempt vs retake score:**
+**Retake improvement (treatment group only):**
 ```sql
 SELECT f.pct AS first_pct, r2.pct AS retake_pct,
        ROUND(r2.pct - f.pct, 1) AS improvement
 FROM test_records f
 JOIN test_records r2
-  ON f.student_id = r2.student_id
- AND f.chapter_id = r2.chapter_id
+  ON f.student_id = r2.student_id AND f.chapter_id = r2.chapter_id
  AND f.attempt = 1 AND r2.attempt = 2;
 ```
 
@@ -119,43 +132,48 @@ JOIN test_records r2
 
 ## Visualizations
 
-### Figure 1 — Score Distribution & Boxplot by Group
-![A/B Distribution](figures/fig1_ab_distribution.png)
+### Fig 1 — A/B Test: Score Distribution & Boxplot
+![fig1](figures/fig1_ab_distribution.png)
 
-### Figure 2 — Monthly Score Trend
-![Score Trend](figures/fig2_score_trend.png)
+### Fig 2 — Monthly Score Trend
+![fig2](figures/fig2_score_trend.png)
 
-### Figure 3 — Chapter Difficulty Heatmap
-![Heatmap](figures/fig3_heatmap.png)
+### Fig 3 — Chapter Difficulty Heatmap
+![fig3](figures/fig3_heatmap.png)
 
-### Figure 4 — Retake Improvement Analysis
-![Retake Detail](figures/fig4_retake_detail.png)
+### Fig 4 — Retake Improvement Detail
+![fig4](figures/fig4_retake_detail.png)
+
+### Fig 5 — Mastery Rate by Group
+![fig5](figures/fig5_mastery_rate.png)
 
 ---
 
 ## Tableau Dashboard
 
-An interactive Tableau Public dashboard was built using the exported CSVs. It includes:
+🔗 **[View Interactive Dashboard on Tableau Public](#)** ← *link to be added after publishing*
 
-- Overall KPI summary cards (avg score, mastery rate, retake count)
+Dashboard includes:
+- KPI summary cards (avg score, mastery rate, retake count)
 - Control vs Treatment score comparison by subject
-- Chapter difficulty heatmap with filter by subject
-- Individual student score trends over time
+- Chapter difficulty heatmap with subject filter
+- Individual student score trends
 - Retake improvement scatter plot
-
-> 🔗 **[View Tableau Dashboard](https://public.tableau.com)** ← *(link to be added after publishing)*
 
 ---
 
 ## Data Note
 
-Data is **synthetic but grounded in real tutoring patterns** from a private math tutoring practice spanning 4 years (2022–2026). Score distributions, chapter difficulty levels, and retake improvement rates were calibrated to match observed outcomes:
+All students are anonymized as `Student_01` through `Student_24`. Score distributions, chapter difficulty, and retake improvement rates are calibrated to match observed outcomes from 4 years of tutoring across 6 math courses (Algebra 1/2, Precalculus, AP Precalculus, AP Calculus AB/BC).
 
-- AP exam students: typical first-attempt range 60–75%
-- Algebra students: typical range 72–90%
-- Retake improvement: mean ~10 points with realistic variance
-
-Student names are pseudonymous. No personally identifiable information is included.
+| Course | Grade | Avg First-Attempt Score |
+|---|---|---|
+| Algebra 1 | G9 | ~82% |
+| Algebra 2 | G10 | ~76% |
+| Precalculus | G10 | ~73% |
+| AP Precalculus | G11 | ~71% |
+| AP Calculus AB | G11 | ~69% |
+| AP Calculus BC | G12 | ~65% |
 
 ---
 
@@ -164,9 +182,9 @@ Student names are pseudonymous. No personally identifiable information is includ
 | Layer | Tool |
 |---|---|
 | Database | SQLite 3 |
-| Data Generation | Python (NumPy, pandas) |
-| SQL Analysis | SQLite + pandas |
-| Statistical Testing | scipy.stats (t-test, Mann-Whitney U, Shapiro-Wilk) |
+| Data generation | Python (NumPy, pandas) |
+| SQL analysis | SQLite + pandas |
+| Statistical testing | scipy.stats (t-test, Mann-Whitney U, Shapiro-Wilk, paired t-test) |
 | Visualization | Matplotlib, Seaborn |
 | BI Dashboard | Tableau Public |
 
@@ -180,6 +198,6 @@ cd student-performance-analytics
 pip install -r requirements.txt
 
 python generate_data.py   # Creates math_tracker.db
-python sql_analysis.py    # Runs queries + exports CSVs
+python sql_analysis.py    # Runs SQL queries + exports CSVs
 python ab_testing.py      # Runs hypothesis tests + saves figures
 ```

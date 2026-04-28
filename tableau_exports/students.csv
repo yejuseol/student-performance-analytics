@@ -1,25 +1,25 @@
-student_id,name,grade,subject,retake_group
-1,Aiden Park,G9,Algebra 1,control
-2,Brianna Kim,G9,Algebra 1,control
-3,Connor Lee,G9,Algebra 1,treatment
-4,Diana Choi,G9,Algebra 1,treatment
-5,Ethan Jung,G10,Algebra 2,control
-6,Fiona Yoon,G10,Algebra 2,control
-7,George Han,G10,Algebra 2,treatment
-8,Hannah Seo,G10,Algebra 2,treatment
-9,Ivan Kwon,G10,Precalculus,control
-10,Julia Shin,G10,Precalculus,control
-11,Kevin Oh,G10,Precalculus,treatment
-12,Laura Lim,G10,Precalculus,treatment
-13,Mason Bae,G11,AP Precalculus,control
-14,Nora Cho,G11,AP Precalculus,control
-15,Oscar Jang,G11,AP Precalculus,treatment
-16,Priya Min,G11,AP Precalculus,treatment
-17,Quinn Song,G11,AP Calculus AB,control
-18,Rachel Moon,G11,AP Calculus AB,control
-19,Samuel Hong,G11,AP Calculus AB,treatment
-20,Tina Ahn,G11,AP Calculus AB,treatment
-21,Uma Kang,G12,AP Calculus BC,control
-22,Victor Yoo,G12,AP Calculus BC,control
-23,Wendy Im,G12,AP Calculus BC,treatment
-24,Xavier Nam,G12,AP Calculus BC,treatment
+student_id,name,grade,subject,retake_group,ability_tier
+1,Student_01,G9,Algebra 1,control,high
+2,Student_02,G9,Algebra 1,control,mid
+3,Student_03,G9,Algebra 1,treatment,mid
+4,Student_04,G9,Algebra 1,treatment,low
+5,Student_05,G10,Algebra 2,control,high
+6,Student_06,G10,Algebra 2,control,mid
+7,Student_07,G10,Algebra 2,treatment,mid
+8,Student_08,G10,Algebra 2,treatment,low
+9,Student_09,G10,Precalculus,control,high
+10,Student_10,G10,Precalculus,control,mid
+11,Student_11,G10,Precalculus,treatment,mid
+12,Student_12,G10,Precalculus,treatment,low
+13,Student_13,G11,AP Precalculus,control,high
+14,Student_14,G11,AP Precalculus,control,mid
+15,Student_15,G11,AP Precalculus,treatment,mid
+16,Student_16,G11,AP Precalculus,treatment,low
+17,Student_17,G11,AP Calculus AB,control,high
+18,Student_18,G11,AP Calculus AB,control,mid
+19,Student_19,G11,AP Calculus AB,treatment,mid
+20,Student_20,G11,AP Calculus AB,treatment,low
+21,Student_21,G12,AP Calculus BC,control,high
+22,Student_22,G12,AP Calculus BC,control,mid
+23,Student_23,G12,AP Calculus BC,treatment,mid
+24,Student_24,G12,AP Calculus BC,treatment,low

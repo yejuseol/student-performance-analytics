@@ -1,173 +1,173 @@
 student_id,name,subject,retake_group,chapter_id,chapter_name,difficulty,best_pct,attempts_taken,mastered
-1,Aiden Park,Algebra 1,control,1,Linear Equations & Inequalities,0.85,78.4,1,1
-1,Aiden Park,Algebra 1,control,2,Functions & Graphs,0.95,85.2,1,1
-1,Aiden Park,Algebra 1,control,3,Systems of Equations,1.05,82.8,1,1
-1,Aiden Park,Algebra 1,control,4,Polynomials,1.0,73.4,1,0
-1,Aiden Park,Algebra 1,control,5,Factoring,1.1,74.8,1,0
-1,Aiden Park,Algebra 1,control,6,Quadratic Equations,1.2,85.0,1,1
-1,Aiden Park,Algebra 1,control,7,Exponential Functions,1.15,75.8,1,0
-1,Aiden Park,Algebra 1,control,8,Statistics & Data Analysis,0.9,79.8,1,1
-2,Brianna Kim,Algebra 1,control,1,Linear Equations & Inequalities,0.85,81.2,1,1
-2,Brianna Kim,Algebra 1,control,2,Functions & Graphs,0.95,77.2,1,1
-2,Brianna Kim,Algebra 1,control,3,Systems of Equations,1.05,89.6,1,1
-2,Brianna Kim,Algebra 1,control,4,Polynomials,1.0,81.0,1,1
-2,Brianna Kim,Algebra 1,control,5,Factoring,1.1,71.4,1,0
-2,Brianna Kim,Algebra 1,control,6,Quadratic Equations,1.2,72.2,1,0
-2,Brianna Kim,Algebra 1,control,7,Exponential Functions,1.15,81.2,1,1
-2,Brianna Kim,Algebra 1,control,8,Statistics & Data Analysis,0.9,80.6,1,1
-3,Connor Lee,Algebra 1,treatment,1,Linear Equations & Inequalities,0.85,84.6,1,1
-3,Connor Lee,Algebra 1,treatment,2,Functions & Graphs,0.95,91.8,1,1
-3,Connor Lee,Algebra 1,treatment,3,Systems of Equations,1.05,92.4,2,1
-3,Connor Lee,Algebra 1,treatment,4,Polynomials,1.0,88.6,2,1
-3,Connor Lee,Algebra 1,treatment,5,Factoring,1.1,84.8,1,1
-3,Connor Lee,Algebra 1,treatment,6,Quadratic Equations,1.2,85.6,2,1
-3,Connor Lee,Algebra 1,treatment,7,Exponential Functions,1.15,80.6,2,1
-3,Connor Lee,Algebra 1,treatment,8,Statistics & Data Analysis,0.9,95.4,1,1
-4,Diana Choi,Algebra 1,treatment,1,Linear Equations & Inequalities,0.85,88.2,1,1
-4,Diana Choi,Algebra 1,treatment,2,Functions & Graphs,0.95,93.6,1,1
-4,Diana Choi,Algebra 1,treatment,3,Systems of Equations,1.05,87.0,1,1
-4,Diana Choi,Algebra 1,treatment,4,Polynomials,1.0,83.2,1,1
-4,Diana Choi,Algebra 1,treatment,5,Factoring,1.1,93.8,1,1
-4,Diana Choi,Algebra 1,treatment,6,Quadratic Equations,1.2,80.0,1,1
-4,Diana Choi,Algebra 1,treatment,7,Exponential Functions,1.15,79.6,2,1
-4,Diana Choi,Algebra 1,treatment,8,Statistics & Data Analysis,0.9,92.8,2,1
-5,Ethan Jung,Algebra 2,control,9,Polynomial Functions,0.95,80.6,1,1
-5,Ethan Jung,Algebra 2,control,10,Rational Functions,1.1,82.0,1,1
-5,Ethan Jung,Algebra 2,control,11,Exponential & Logarithmic,1.15,74.6,1,0
-5,Ethan Jung,Algebra 2,control,12,Sequences & Series,1.05,63.0,1,0
-5,Ethan Jung,Algebra 2,control,13,Trigonometry Basics,1.2,73.8,1,0
-5,Ethan Jung,Algebra 2,control,14,Conic Sections,1.1,74.8,1,0
-5,Ethan Jung,Algebra 2,control,15,Probability & Statistics,0.9,93.6,1,1
-5,Ethan Jung,Algebra 2,control,16,Complex Numbers,1.15,78.2,1,1
-6,Fiona Yoon,Algebra 2,control,9,Polynomial Functions,0.95,87.0,1,1
-6,Fiona Yoon,Algebra 2,control,10,Rational Functions,1.1,84.6,1,1
-6,Fiona Yoon,Algebra 2,control,11,Exponential & Logarithmic,1.15,65.8,1,0
-6,Fiona Yoon,Algebra 2,control,12,Sequences & Series,1.05,66.6,1,0
-6,Fiona Yoon,Algebra 2,control,13,Trigonometry Basics,1.2,77.0,1,1
-6,Fiona Yoon,Algebra 2,control,14,Conic Sections,1.1,92.0,1,1
-6,Fiona Yoon,Algebra 2,control,15,Probability & Statistics,0.9,77.4,1,1
-6,Fiona Yoon,Algebra 2,control,16,Complex Numbers,1.15,78.4,1,1
-7,George Han,Algebra 2,treatment,9,Polynomial Functions,0.95,87.2,1,1
-7,George Han,Algebra 2,treatment,10,Rational Functions,1.1,75.6,2,0
-7,George Han,Algebra 2,treatment,11,Exponential & Logarithmic,1.15,83.2,1,1
-7,George Han,Algebra 2,treatment,12,Sequences & Series,1.05,81.2,1,1
-7,George Han,Algebra 2,treatment,13,Trigonometry Basics,1.2,92.4,1,1
-7,George Han,Algebra 2,treatment,14,Conic Sections,1.1,89.0,2,1
-7,George Han,Algebra 2,treatment,15,Probability & Statistics,0.9,96.8,1,1
-7,George Han,Algebra 2,treatment,16,Complex Numbers,1.15,89.0,1,1
-8,Hannah Seo,Algebra 2,treatment,9,Polynomial Functions,0.95,83.8,2,1
-8,Hannah Seo,Algebra 2,treatment,10,Rational Functions,1.1,91.2,2,1
-8,Hannah Seo,Algebra 2,treatment,11,Exponential & Logarithmic,1.15,80.0,2,1
-8,Hannah Seo,Algebra 2,treatment,12,Sequences & Series,1.05,95.2,1,1
-8,Hannah Seo,Algebra 2,treatment,13,Trigonometry Basics,1.2,86.4,2,1
-8,Hannah Seo,Algebra 2,treatment,14,Conic Sections,1.1,82.6,1,1
-8,Hannah Seo,Algebra 2,treatment,15,Probability & Statistics,0.9,88.8,2,1
-8,Hannah Seo,Algebra 2,treatment,16,Complex Numbers,1.15,95.8,1,1
-9,Ivan Kwon,Precalculus,control,17,Review of Functions,0.9,70.4,1,0
-9,Ivan Kwon,Precalculus,control,18,Polynomial & Rational Functions,1.05,75.6,1,0
-9,Ivan Kwon,Precalculus,control,19,Exponential Functions,1.0,59.0,1,0
-9,Ivan Kwon,Precalculus,control,20,Trigonometric Functions,1.2,66.4,1,0
-9,Ivan Kwon,Precalculus,control,21,Trigonometric Identities,1.35,51.2,1,0
-9,Ivan Kwon,Precalculus,control,22,Vectors & Parametric Equations,1.25,80.8,1,1
-9,Ivan Kwon,Precalculus,control,23,Limits Introduction,1.3,65.4,1,0
-10,Julia Shin,Precalculus,control,17,Review of Functions,0.9,78.6,1,1
-10,Julia Shin,Precalculus,control,18,Polynomial & Rational Functions,1.05,74.0,1,0
-10,Julia Shin,Precalculus,control,19,Exponential Functions,1.0,91.8,1,1
-10,Julia Shin,Precalculus,control,20,Trigonometric Functions,1.2,55.0,1,0
-10,Julia Shin,Precalculus,control,21,Trigonometric Identities,1.35,71.8,1,0
-10,Julia Shin,Precalculus,control,22,Vectors & Parametric Equations,1.25,68.2,1,0
-10,Julia Shin,Precalculus,control,23,Limits Introduction,1.3,75.8,1,0
-11,Kevin Oh,Precalculus,treatment,17,Review of Functions,0.9,80.2,1,1
-11,Kevin Oh,Precalculus,treatment,18,Polynomial & Rational Functions,1.05,75.4,2,0
-11,Kevin Oh,Precalculus,treatment,19,Exponential Functions,1.0,84.0,1,1
-11,Kevin Oh,Precalculus,treatment,20,Trigonometric Functions,1.2,87.8,2,1
-11,Kevin Oh,Precalculus,treatment,21,Trigonometric Identities,1.35,79.2,2,1
-11,Kevin Oh,Precalculus,treatment,22,Vectors & Parametric Equations,1.25,81.6,2,1
-11,Kevin Oh,Precalculus,treatment,23,Limits Introduction,1.3,86.0,2,1
-12,Laura Lim,Precalculus,treatment,17,Review of Functions,0.9,75.6,2,0
-12,Laura Lim,Precalculus,treatment,18,Polynomial & Rational Functions,1.05,71.8,2,0
-12,Laura Lim,Precalculus,treatment,19,Exponential Functions,1.0,73.4,2,0
-12,Laura Lim,Precalculus,treatment,20,Trigonometric Functions,1.2,85.6,1,1
-12,Laura Lim,Precalculus,treatment,21,Trigonometric Identities,1.35,71.0,2,0
-12,Laura Lim,Precalculus,treatment,22,Vectors & Parametric Equations,1.25,90.0,2,1
-12,Laura Lim,Precalculus,treatment,23,Limits Introduction,1.3,77.8,2,1
-13,Mason Bae,AP Precalculus,control,24,Polynomial & Rational Functions,1.0,96.4,1,1
-13,Mason Bae,AP Precalculus,control,25,Exponential & Logarithmic,1.05,67.0,1,0
-13,Mason Bae,AP Precalculus,control,26,Trigonometric Functions,1.2,90.0,1,1
-13,Mason Bae,AP Precalculus,control,27,Functions Involving Parameters,1.3,54.4,1,0
-13,Mason Bae,AP Precalculus,control,28,Polar Coordinates,1.35,60.8,1,0
-14,Nora Cho,AP Precalculus,control,24,Polynomial & Rational Functions,1.0,84.4,1,1
-14,Nora Cho,AP Precalculus,control,25,Exponential & Logarithmic,1.05,50.2,1,0
-14,Nora Cho,AP Precalculus,control,26,Trigonometric Functions,1.2,82.0,1,1
-14,Nora Cho,AP Precalculus,control,27,Functions Involving Parameters,1.3,43.0,1,0
-14,Nora Cho,AP Precalculus,control,28,Polar Coordinates,1.35,64.4,1,0
-15,Oscar Jang,AP Precalculus,treatment,24,Polynomial & Rational Functions,1.0,71.4,2,0
-15,Oscar Jang,AP Precalculus,treatment,25,Exponential & Logarithmic,1.05,71.2,2,0
-15,Oscar Jang,AP Precalculus,treatment,26,Trigonometric Functions,1.2,79.8,2,1
-15,Oscar Jang,AP Precalculus,treatment,27,Functions Involving Parameters,1.3,86.2,1,1
-15,Oscar Jang,AP Precalculus,treatment,28,Polar Coordinates,1.35,84.8,2,1
-16,Priya Min,AP Precalculus,treatment,24,Polynomial & Rational Functions,1.0,56.2,2,0
-16,Priya Min,AP Precalculus,treatment,25,Exponential & Logarithmic,1.05,74.8,2,0
-16,Priya Min,AP Precalculus,treatment,26,Trigonometric Functions,1.2,67.2,2,0
-16,Priya Min,AP Precalculus,treatment,27,Functions Involving Parameters,1.3,60.4,2,0
-16,Priya Min,AP Precalculus,treatment,28,Polar Coordinates,1.35,71.0,2,0
-17,Quinn Song,AP Calculus AB,control,29,Limits & Continuity,1.0,56.6,1,0
-17,Quinn Song,AP Calculus AB,control,30,Differentiation: Definition,1.1,55.4,1,0
-17,Quinn Song,AP Calculus AB,control,31,Differentiation: Composite,1.2,63.0,1,0
-17,Quinn Song,AP Calculus AB,control,32,Contextual Applications,1.15,53.8,1,0
-17,Quinn Song,AP Calculus AB,control,33,Analytical Applications,1.3,31.6,1,0
-17,Quinn Song,AP Calculus AB,control,34,Integration & Accumulation,1.35,80.2,1,1
-17,Quinn Song,AP Calculus AB,control,35,Differential Equations,1.4,74.6,1,0
-17,Quinn Song,AP Calculus AB,control,36,Applications of Integration,1.35,51.4,1,0
-18,Rachel Moon,AP Calculus AB,control,29,Limits & Continuity,1.0,68.4,1,0
-18,Rachel Moon,AP Calculus AB,control,30,Differentiation: Definition,1.1,63.2,1,0
-18,Rachel Moon,AP Calculus AB,control,31,Differentiation: Composite,1.2,82.6,1,1
-18,Rachel Moon,AP Calculus AB,control,32,Contextual Applications,1.15,71.4,1,0
-18,Rachel Moon,AP Calculus AB,control,33,Analytical Applications,1.3,70.0,1,0
-18,Rachel Moon,AP Calculus AB,control,34,Integration & Accumulation,1.35,54.0,1,0
-18,Rachel Moon,AP Calculus AB,control,35,Differential Equations,1.4,85.6,1,1
-18,Rachel Moon,AP Calculus AB,control,36,Applications of Integration,1.35,55.6,1,0
-19,Samuel Hong,AP Calculus AB,treatment,29,Limits & Continuity,1.0,63.6,2,0
-19,Samuel Hong,AP Calculus AB,treatment,30,Differentiation: Definition,1.1,62.6,2,0
-19,Samuel Hong,AP Calculus AB,treatment,31,Differentiation: Composite,1.2,74.8,2,0
-19,Samuel Hong,AP Calculus AB,treatment,32,Contextual Applications,1.15,46.6,2,0
-19,Samuel Hong,AP Calculus AB,treatment,33,Analytical Applications,1.3,43.4,2,0
-19,Samuel Hong,AP Calculus AB,treatment,34,Integration & Accumulation,1.35,68.4,2,0
-19,Samuel Hong,AP Calculus AB,treatment,35,Differential Equations,1.4,80.0,2,1
-19,Samuel Hong,AP Calculus AB,treatment,36,Applications of Integration,1.35,69.0,2,0
-20,Tina Ahn,AP Calculus AB,treatment,29,Limits & Continuity,1.0,66.6,2,0
-20,Tina Ahn,AP Calculus AB,treatment,30,Differentiation: Definition,1.1,88.2,1,1
-20,Tina Ahn,AP Calculus AB,treatment,31,Differentiation: Composite,1.2,68.2,2,0
-20,Tina Ahn,AP Calculus AB,treatment,32,Contextual Applications,1.15,73.0,2,0
-20,Tina Ahn,AP Calculus AB,treatment,33,Analytical Applications,1.3,74.6,2,0
-20,Tina Ahn,AP Calculus AB,treatment,34,Integration & Accumulation,1.35,80.2,2,1
-20,Tina Ahn,AP Calculus AB,treatment,35,Differential Equations,1.4,74.8,2,0
-20,Tina Ahn,AP Calculus AB,treatment,36,Applications of Integration,1.35,73.8,2,0
-21,Uma Kang,AP Calculus BC,control,37,Limits & Continuity,0.95,84.2,1,1
-21,Uma Kang,AP Calculus BC,control,38,Differentiation,1.05,96.0,1,1
-21,Uma Kang,AP Calculus BC,control,39,Integration Techniques,1.2,53.2,1,0
-21,Uma Kang,AP Calculus BC,control,40,Parametric & Polar Functions,1.35,90.2,1,1
-21,Uma Kang,AP Calculus BC,control,41,Infinite Sequences & Series,1.5,73.0,1,0
-21,Uma Kang,AP Calculus BC,control,42,Vector-Valued Functions,1.4,72.2,1,0
-21,Uma Kang,AP Calculus BC,control,43,Differential Equations,1.45,72.6,1,0
-22,Victor Yoo,AP Calculus BC,control,37,Limits & Continuity,0.95,81.6,1,1
-22,Victor Yoo,AP Calculus BC,control,38,Differentiation,1.05,82.0,1,1
-22,Victor Yoo,AP Calculus BC,control,39,Integration Techniques,1.2,64.2,1,0
-22,Victor Yoo,AP Calculus BC,control,40,Parametric & Polar Functions,1.35,42.8,1,0
-22,Victor Yoo,AP Calculus BC,control,41,Infinite Sequences & Series,1.5,45.8,1,0
-22,Victor Yoo,AP Calculus BC,control,42,Vector-Valued Functions,1.4,67.8,1,0
-22,Victor Yoo,AP Calculus BC,control,43,Differential Equations,1.45,45.4,1,0
-23,Wendy Im,AP Calculus BC,treatment,37,Limits & Continuity,0.95,60.2,2,0
-23,Wendy Im,AP Calculus BC,treatment,38,Differentiation,1.05,81.0,2,1
-23,Wendy Im,AP Calculus BC,treatment,39,Integration Techniques,1.2,98.0,1,1
-23,Wendy Im,AP Calculus BC,treatment,40,Parametric & Polar Functions,1.35,68.0,2,0
-23,Wendy Im,AP Calculus BC,treatment,41,Infinite Sequences & Series,1.5,58.2,2,0
-23,Wendy Im,AP Calculus BC,treatment,42,Vector-Valued Functions,1.4,78.4,2,1
-23,Wendy Im,AP Calculus BC,treatment,43,Differential Equations,1.45,70.8,2,0
-24,Xavier Nam,AP Calculus BC,treatment,37,Limits & Continuity,0.95,52.4,2,0
-24,Xavier Nam,AP Calculus BC,treatment,38,Differentiation,1.05,66.8,2,0
-24,Xavier Nam,AP Calculus BC,treatment,39,Integration Techniques,1.2,75.8,2,0
-24,Xavier Nam,AP Calculus BC,treatment,40,Parametric & Polar Functions,1.35,53.2,2,0
-24,Xavier Nam,AP Calculus BC,treatment,41,Infinite Sequences & Series,1.5,68.0,2,0
-24,Xavier Nam,AP Calculus BC,treatment,42,Vector-Valued Functions,1.4,65.4,2,0
-24,Xavier Nam,AP Calculus BC,treatment,43,Differential Equations,1.45,56.6,2,0
+1,Student_01,Algebra 1,control,1,Linear Equations & Inequalities,0.88,99.4,1,1
+1,Student_01,Algebra 1,control,2,Functions & Graphs,0.95,93.8,1,1
+1,Student_01,Algebra 1,control,3,Systems of Equations,1.05,87.2,1,1
+1,Student_01,Algebra 1,control,4,Polynomials,1.0,94.6,1,1
+1,Student_01,Algebra 1,control,5,Factoring,1.12,92.2,1,1
+1,Student_01,Algebra 1,control,6,Quadratic Equations,1.18,79.2,1,1
+1,Student_01,Algebra 1,control,7,Exponential Functions,1.1,87.8,1,1
+1,Student_01,Algebra 1,control,8,Statistics & Data Analysis,0.92,91.2,1,1
+2,Student_02,Algebra 1,control,1,Linear Equations & Inequalities,0.88,82.8,1,1
+2,Student_02,Algebra 1,control,2,Functions & Graphs,0.95,66.6,1,0
+2,Student_02,Algebra 1,control,3,Systems of Equations,1.05,78.4,1,1
+2,Student_02,Algebra 1,control,4,Polynomials,1.0,84.8,1,1
+2,Student_02,Algebra 1,control,5,Factoring,1.12,70.6,1,0
+2,Student_02,Algebra 1,control,6,Quadratic Equations,1.18,77.6,1,1
+2,Student_02,Algebra 1,control,7,Exponential Functions,1.1,85.8,1,1
+2,Student_02,Algebra 1,control,8,Statistics & Data Analysis,0.92,67.6,1,0
+3,Student_03,Algebra 1,treatment,1,Linear Equations & Inequalities,0.88,84.0,1,1
+3,Student_03,Algebra 1,treatment,2,Functions & Graphs,0.95,85.0,1,1
+3,Student_03,Algebra 1,treatment,3,Systems of Equations,1.05,81.4,1,1
+3,Student_03,Algebra 1,treatment,4,Polynomials,1.0,85.0,1,1
+3,Student_03,Algebra 1,treatment,5,Factoring,1.12,91.6,2,1
+3,Student_03,Algebra 1,treatment,6,Quadratic Equations,1.18,75.2,2,0
+3,Student_03,Algebra 1,treatment,7,Exponential Functions,1.1,81.6,1,1
+3,Student_03,Algebra 1,treatment,8,Statistics & Data Analysis,0.92,81.8,1,1
+4,Student_04,Algebra 1,treatment,1,Linear Equations & Inequalities,0.88,84.0,2,1
+4,Student_04,Algebra 1,treatment,2,Functions & Graphs,0.95,86.6,2,1
+4,Student_04,Algebra 1,treatment,3,Systems of Equations,1.05,85.8,2,1
+4,Student_04,Algebra 1,treatment,4,Polynomials,1.0,95.4,1,1
+4,Student_04,Algebra 1,treatment,5,Factoring,1.12,72.8,2,0
+4,Student_04,Algebra 1,treatment,6,Quadratic Equations,1.18,81.2,2,1
+4,Student_04,Algebra 1,treatment,7,Exponential Functions,1.1,78.6,2,1
+4,Student_04,Algebra 1,treatment,8,Statistics & Data Analysis,0.92,73.2,2,0
+5,Student_05,Algebra 2,control,9,Polynomial Functions,0.95,86.4,1,1
+5,Student_05,Algebra 2,control,10,Rational Functions,1.12,86.6,1,1
+5,Student_05,Algebra 2,control,11,Exponential & Logarithmic,1.15,84.6,1,1
+5,Student_05,Algebra 2,control,12,Sequences & Series,1.08,81.0,1,1
+5,Student_05,Algebra 2,control,13,Trigonometry Basics,1.22,68.0,1,0
+5,Student_05,Algebra 2,control,14,Conic Sections,1.1,69.0,1,0
+5,Student_05,Algebra 2,control,15,Probability & Statistics,0.9,91.6,1,1
+5,Student_05,Algebra 2,control,16,Complex Numbers,1.18,71.8,1,0
+6,Student_06,Algebra 2,control,9,Polynomial Functions,0.95,70.2,1,0
+6,Student_06,Algebra 2,control,10,Rational Functions,1.12,72.4,1,0
+6,Student_06,Algebra 2,control,11,Exponential & Logarithmic,1.15,80.2,1,1
+6,Student_06,Algebra 2,control,12,Sequences & Series,1.08,59.0,1,0
+6,Student_06,Algebra 2,control,13,Trigonometry Basics,1.22,80.6,1,1
+6,Student_06,Algebra 2,control,14,Conic Sections,1.1,90.8,1,1
+6,Student_06,Algebra 2,control,15,Probability & Statistics,0.9,87.8,1,1
+6,Student_06,Algebra 2,control,16,Complex Numbers,1.18,62.2,1,0
+7,Student_07,Algebra 2,treatment,9,Polynomial Functions,0.95,82.4,2,1
+7,Student_07,Algebra 2,treatment,10,Rational Functions,1.12,85.2,2,1
+7,Student_07,Algebra 2,treatment,11,Exponential & Logarithmic,1.15,87.8,1,1
+7,Student_07,Algebra 2,treatment,12,Sequences & Series,1.08,77.0,2,1
+7,Student_07,Algebra 2,treatment,13,Trigonometry Basics,1.22,84.2,1,1
+7,Student_07,Algebra 2,treatment,14,Conic Sections,1.1,92.2,1,1
+7,Student_07,Algebra 2,treatment,15,Probability & Statistics,0.9,89.4,1,1
+7,Student_07,Algebra 2,treatment,16,Complex Numbers,1.18,83.0,1,1
+8,Student_08,Algebra 2,treatment,9,Polynomial Functions,0.95,75.8,2,0
+8,Student_08,Algebra 2,treatment,10,Rational Functions,1.12,58.6,2,0
+8,Student_08,Algebra 2,treatment,11,Exponential & Logarithmic,1.15,66.6,2,0
+8,Student_08,Algebra 2,treatment,12,Sequences & Series,1.08,74.0,2,0
+8,Student_08,Algebra 2,treatment,13,Trigonometry Basics,1.22,71.2,2,0
+8,Student_08,Algebra 2,treatment,14,Conic Sections,1.1,76.4,2,1
+8,Student_08,Algebra 2,treatment,15,Probability & Statistics,0.9,74.4,2,0
+8,Student_08,Algebra 2,treatment,16,Complex Numbers,1.18,81.8,2,1
+9,Student_09,Precalculus,control,17,Review of Functions,0.9,83.0,1,1
+9,Student_09,Precalculus,control,18,Polynomial & Rational Functions,1.05,89.6,1,1
+9,Student_09,Precalculus,control,19,Exponential Functions,1.0,81.6,1,1
+9,Student_09,Precalculus,control,20,Trigonometric Functions,1.22,82.4,1,1
+9,Student_09,Precalculus,control,21,Trigonometric Identities,1.38,87.6,1,1
+9,Student_09,Precalculus,control,22,Vectors & Parametric Equations,1.28,78.6,1,1
+9,Student_09,Precalculus,control,23,Limits Introduction,1.32,77.6,1,1
+10,Student_10,Precalculus,control,17,Review of Functions,0.9,67.6,1,0
+10,Student_10,Precalculus,control,18,Polynomial & Rational Functions,1.05,68.4,1,0
+10,Student_10,Precalculus,control,19,Exponential Functions,1.0,83.8,1,1
+10,Student_10,Precalculus,control,20,Trigonometric Functions,1.22,50.6,1,0
+10,Student_10,Precalculus,control,21,Trigonometric Identities,1.38,67.2,1,0
+10,Student_10,Precalculus,control,22,Vectors & Parametric Equations,1.28,55.4,1,0
+10,Student_10,Precalculus,control,23,Limits Introduction,1.32,69.8,1,0
+11,Student_11,Precalculus,treatment,17,Review of Functions,0.9,82.0,2,1
+11,Student_11,Precalculus,treatment,18,Polynomial & Rational Functions,1.05,88.8,2,1
+11,Student_11,Precalculus,treatment,19,Exponential Functions,1.0,79.2,2,1
+11,Student_11,Precalculus,treatment,20,Trigonometric Functions,1.22,84.0,1,1
+11,Student_11,Precalculus,treatment,21,Trigonometric Identities,1.38,70.4,2,0
+11,Student_11,Precalculus,treatment,22,Vectors & Parametric Equations,1.28,83.8,2,1
+11,Student_11,Precalculus,treatment,23,Limits Introduction,1.32,80.4,1,1
+12,Student_12,Precalculus,treatment,17,Review of Functions,0.9,68.6,2,0
+12,Student_12,Precalculus,treatment,18,Polynomial & Rational Functions,1.05,77.4,2,1
+12,Student_12,Precalculus,treatment,19,Exponential Functions,1.0,53.4,2,0
+12,Student_12,Precalculus,treatment,20,Trigonometric Functions,1.22,95.0,2,1
+12,Student_12,Precalculus,treatment,21,Trigonometric Identities,1.38,68.0,2,0
+12,Student_12,Precalculus,treatment,22,Vectors & Parametric Equations,1.28,77.8,2,1
+12,Student_12,Precalculus,treatment,23,Limits Introduction,1.32,62.2,2,0
+13,Student_13,AP Precalculus,control,24,Polynomial & Rational Functions,1.0,83.4,1,1
+13,Student_13,AP Precalculus,control,25,Exponential & Logarithmic,1.05,66.0,1,0
+13,Student_13,AP Precalculus,control,26,Trigonometric Functions,1.22,75.8,1,0
+13,Student_13,AP Precalculus,control,27,Functions Involving Parameters,1.3,75.0,1,0
+13,Student_13,AP Precalculus,control,28,Polar Coordinates,1.38,46.4,1,0
+14,Student_14,AP Precalculus,control,24,Polynomial & Rational Functions,1.0,70.0,1,0
+14,Student_14,AP Precalculus,control,25,Exponential & Logarithmic,1.05,74.0,1,0
+14,Student_14,AP Precalculus,control,26,Trigonometric Functions,1.22,61.4,1,0
+14,Student_14,AP Precalculus,control,27,Functions Involving Parameters,1.3,65.4,1,0
+14,Student_14,AP Precalculus,control,28,Polar Coordinates,1.38,75.4,1,0
+15,Student_15,AP Precalculus,treatment,24,Polynomial & Rational Functions,1.0,61.2,2,0
+15,Student_15,AP Precalculus,treatment,25,Exponential & Logarithmic,1.05,91.4,2,1
+15,Student_15,AP Precalculus,treatment,26,Trigonometric Functions,1.22,77.4,2,1
+15,Student_15,AP Precalculus,treatment,27,Functions Involving Parameters,1.3,62.0,2,0
+15,Student_15,AP Precalculus,treatment,28,Polar Coordinates,1.38,54.8,2,0
+16,Student_16,AP Precalculus,treatment,24,Polynomial & Rational Functions,1.0,66.4,2,0
+16,Student_16,AP Precalculus,treatment,25,Exponential & Logarithmic,1.05,80.6,2,1
+16,Student_16,AP Precalculus,treatment,26,Trigonometric Functions,1.22,78.4,2,1
+16,Student_16,AP Precalculus,treatment,27,Functions Involving Parameters,1.3,52.0,2,0
+16,Student_16,AP Precalculus,treatment,28,Polar Coordinates,1.38,87.2,2,1
+17,Student_17,AP Calculus AB,control,29,Limits & Continuity,0.98,63.8,1,0
+17,Student_17,AP Calculus AB,control,30,Differentiation: Definition,1.1,87.8,1,1
+17,Student_17,AP Calculus AB,control,31,Differentiation: Composite,1.22,74.4,1,0
+17,Student_17,AP Calculus AB,control,32,Contextual Applications,1.15,75.8,1,0
+17,Student_17,AP Calculus AB,control,33,Analytical Applications,1.32,61.0,1,0
+17,Student_17,AP Calculus AB,control,34,Integration & Accumulation,1.38,61.8,1,0
+17,Student_17,AP Calculus AB,control,35,Differential Equations,1.42,82.4,1,1
+17,Student_17,AP Calculus AB,control,36,Applications of Integration,1.35,81.8,1,1
+18,Student_18,AP Calculus AB,control,29,Limits & Continuity,0.98,63.0,1,0
+18,Student_18,AP Calculus AB,control,30,Differentiation: Definition,1.1,67.8,1,0
+18,Student_18,AP Calculus AB,control,31,Differentiation: Composite,1.22,78.4,1,1
+18,Student_18,AP Calculus AB,control,32,Contextual Applications,1.15,76.8,1,1
+18,Student_18,AP Calculus AB,control,33,Analytical Applications,1.32,47.0,1,0
+18,Student_18,AP Calculus AB,control,34,Integration & Accumulation,1.38,40.8,1,0
+18,Student_18,AP Calculus AB,control,35,Differential Equations,1.42,53.4,1,0
+18,Student_18,AP Calculus AB,control,36,Applications of Integration,1.35,68.0,1,0
+19,Student_19,AP Calculus AB,treatment,29,Limits & Continuity,0.98,62.4,2,0
+19,Student_19,AP Calculus AB,treatment,30,Differentiation: Definition,1.1,59.4,2,0
+19,Student_19,AP Calculus AB,treatment,31,Differentiation: Composite,1.22,72.2,2,0
+19,Student_19,AP Calculus AB,treatment,32,Contextual Applications,1.15,79.8,2,1
+19,Student_19,AP Calculus AB,treatment,33,Analytical Applications,1.32,71.4,2,0
+19,Student_19,AP Calculus AB,treatment,34,Integration & Accumulation,1.38,56.2,2,0
+19,Student_19,AP Calculus AB,treatment,35,Differential Equations,1.42,69.6,2,0
+19,Student_19,AP Calculus AB,treatment,36,Applications of Integration,1.35,78.4,2,1
+20,Student_20,AP Calculus AB,treatment,29,Limits & Continuity,0.98,50.6,2,0
+20,Student_20,AP Calculus AB,treatment,30,Differentiation: Definition,1.1,93.2,1,1
+20,Student_20,AP Calculus AB,treatment,31,Differentiation: Composite,1.22,74.2,2,0
+20,Student_20,AP Calculus AB,treatment,32,Contextual Applications,1.15,88.4,2,1
+20,Student_20,AP Calculus AB,treatment,33,Analytical Applications,1.32,60.2,2,0
+20,Student_20,AP Calculus AB,treatment,34,Integration & Accumulation,1.38,71.6,2,0
+20,Student_20,AP Calculus AB,treatment,35,Differential Equations,1.42,70.6,2,0
+20,Student_20,AP Calculus AB,treatment,36,Applications of Integration,1.35,70.6,2,0
+21,Student_21,AP Calculus BC,control,37,Limits & Continuity,0.95,58.4,1,0
+21,Student_21,AP Calculus BC,control,38,Differentiation,1.05,87.0,1,1
+21,Student_21,AP Calculus BC,control,39,Integration Techniques,1.22,86.8,1,1
+21,Student_21,AP Calculus BC,control,40,Parametric & Polar Functions,1.35,67.6,1,0
+21,Student_21,AP Calculus BC,control,41,Infinite Sequences & Series,1.52,71.0,1,0
+21,Student_21,AP Calculus BC,control,42,Vector-Valued Functions,1.42,73.6,1,0
+21,Student_21,AP Calculus BC,control,43,Differential Equations,1.48,75.6,1,0
+22,Student_22,AP Calculus BC,control,37,Limits & Continuity,0.95,75.0,1,0
+22,Student_22,AP Calculus BC,control,38,Differentiation,1.05,66.4,1,0
+22,Student_22,AP Calculus BC,control,39,Integration Techniques,1.22,57.0,1,0
+22,Student_22,AP Calculus BC,control,40,Parametric & Polar Functions,1.35,59.0,1,0
+22,Student_22,AP Calculus BC,control,41,Infinite Sequences & Series,1.52,47.2,1,0
+22,Student_22,AP Calculus BC,control,42,Vector-Valued Functions,1.42,70.4,1,0
+22,Student_22,AP Calculus BC,control,43,Differential Equations,1.48,42.6,1,0
+23,Student_23,AP Calculus BC,treatment,37,Limits & Continuity,0.95,85.8,2,1
+23,Student_23,AP Calculus BC,treatment,38,Differentiation,1.05,80.4,1,1
+23,Student_23,AP Calculus BC,treatment,39,Integration Techniques,1.22,81.6,1,1
+23,Student_23,AP Calculus BC,treatment,40,Parametric & Polar Functions,1.35,57.6,2,0
+23,Student_23,AP Calculus BC,treatment,41,Infinite Sequences & Series,1.52,73.2,2,0
+23,Student_23,AP Calculus BC,treatment,42,Vector-Valued Functions,1.42,47.6,2,0
+23,Student_23,AP Calculus BC,treatment,43,Differential Equations,1.48,45.4,2,0
+24,Student_24,AP Calculus BC,treatment,37,Limits & Continuity,0.95,44.2,2,0
+24,Student_24,AP Calculus BC,treatment,38,Differentiation,1.05,71.6,2,0
+24,Student_24,AP Calculus BC,treatment,39,Integration Techniques,1.22,42.0,2,0
+24,Student_24,AP Calculus BC,treatment,40,Parametric & Polar Functions,1.35,51.2,2,0
+24,Student_24,AP Calculus BC,treatment,41,Infinite Sequences & Series,1.52,65.2,2,0
+24,Student_24,AP Calculus BC,treatment,42,Vector-Valued Functions,1.42,47.0,2,0
+24,Student_24,AP Calculus BC,treatment,43,Differential Equations,1.48,27.4,2,0
